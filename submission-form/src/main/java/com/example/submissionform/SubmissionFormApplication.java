@@ -12,6 +12,7 @@ public class SubmissionFormApplication extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(SubmissionFormApplication.class);
     }
+
     public static void main(String[] args) {
         SpringApplication.run(SubmissionFormApplication.class, args);
     }

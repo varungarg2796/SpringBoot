@@ -13,10 +13,12 @@ import java.util.Optional;
 public class FormController {
     @Autowired
     CustomerRepo repo;
+
     @RequestMapping("/")
     public String details() {
         return "app";
     }
+
     @RequestMapping("/details")
     public String details(Customers customers) {
         repo.save(customers);
@@ -30,11 +32,11 @@ public class FormController {
 
 
     @PostMapping("/getdetails")
-    public ModelAndView getdetails (@RequestParam int cid){
-      ModelAndView mv = new ModelAndView("retrieve");
-      Customers customers = repo.findById(cid).orElse(null);
-      mv.addObject(customers);
-      return mv;
+    public ModelAndView getdetails(@RequestParam int cid) {
+        ModelAndView mv = new ModelAndView("retrieve");
+        Customers customers = repo.findById(cid).orElse(null);
+        mv.addObject(customers);
+        return mv;
     }
 
 
@@ -57,7 +59,7 @@ public class FormController {
         return cust;
     }
 
-    @PutMapping(path="/customers", consumes={"application/json"})
+    @PutMapping(path = "/customers", consumes = {"application/json"})
     public Customers updateCustomer(@RequestBody Customers customers) {
         repo.save(customers);
         return customers;

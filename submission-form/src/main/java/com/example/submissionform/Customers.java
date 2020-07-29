@@ -10,6 +10,7 @@ public class Customers {
     private int cid;
     private String cname;
     private String cemail;
+
     public int getCid() {
         return cid;
     }
