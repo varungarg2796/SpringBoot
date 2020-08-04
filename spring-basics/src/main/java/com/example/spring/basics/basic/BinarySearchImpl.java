@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component
 public class BinarySearchImpl {
@@ -20,8 +21,13 @@ public class BinarySearchImpl {
         return 1;
     }
 
-    @PostConstruct
+    @PostConstruct // like ngOninit for a bean
     public void postConstruct() {
-        
+
+    }
+
+    @PreDestroy // like ngOnDestroy for a beean
+    public void preDestroy() {
+
     }
 }
