@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // it will take care of generating the value
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // it will take care of generating the value
     private long id;
 
     @Column(name="sname") // since the name in table is different
@@ -16,8 +16,8 @@ public class Student {
     @Column(name="scourse") // since the name in table is different
     private String course;
 
-    @Column(name="sfees") // since the name in table is different
-    private double fees;
+    @Column(name="sfee") // since the name in table is different
+    private double fee;
 
     public long getId() {
         return id;
@@ -43,12 +43,12 @@ public class Student {
         this.course = course;
     }
 
-    public double getFees() {
-        return fees;
+    public double getFee() {
+        return fee;
     }
 
-    public void setFees(double fees) {
-        this.fees = fees;
+    public void setFee(double fees) {
+        this.fee = fees;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", course='" + course + '\'' +
-                ", fees=" + fees +
+                ", fees=" + fee +
                 '}';
     }
 
