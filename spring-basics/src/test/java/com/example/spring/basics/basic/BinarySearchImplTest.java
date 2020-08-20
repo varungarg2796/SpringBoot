@@ -24,7 +24,7 @@ class BinarySearchImplTest {
     public void testBasicScenario() {
         // call method on binary search
         // check if it is correct
-        int result = binarySearch.binarySearch(new int[] {}, 5);
-        assertEquals(1,result);
+        int result = binarySearch.binarySearch(new int[]{}, 5);
+        assertEquals(1, result);
     }
 }

@@ -22,7 +22,7 @@ public class SpringBasicsScopeApplication {
         //BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
 
         // ApplicationContext manages the beans
-        ApplicationContext applicationContext =SpringApplication.run(SpringBasicsScopeApplication.class, args);
+        ApplicationContext applicationContext = SpringApplication.run(SpringBasicsScopeApplication.class, args);
 
 
         PersonDAO personDAO = applicationContext.getBean(PersonDAO.class);

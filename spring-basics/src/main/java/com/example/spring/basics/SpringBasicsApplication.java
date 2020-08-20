@@ -17,9 +17,9 @@ public class SpringBasicsApplication {
         //BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
 
         // ApplicationContext manages the beans
-        ApplicationContext applicationContext =SpringApplication.run(SpringBasicsApplication.class, args);
-        BinarySearchImpl binarySearch= applicationContext.getBean(BinarySearchImpl.class);
-        int result = binarySearch.binarySearch(new int[] {12,4,6,7} ,4);
+        ApplicationContext applicationContext = SpringApplication.run(SpringBasicsApplication.class, args);
+        BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+        int result = binarySearch.binarySearch(new int[]{12, 4, 6, 7}, 4);
         System.out.println(result);
 
     }

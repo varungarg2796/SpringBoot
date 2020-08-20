@@ -16,8 +16,8 @@ public class BinarySearchImpl {
         this.sortAlgorithm = sortAlgorithm;
     }
 
-    public int binarySearch(int [] numbers, int numberToSearch) {
-        int [] sortedNumbers = sortAlgorithm.sort(numbers);
+    public int binarySearch(int[] numbers, int numberToSearch) {
+        int[] sortedNumbers = sortAlgorithm.sort(numbers);
         return 1;
     }
 

@@ -3,20 +3,20 @@ package com.example.studentdal.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name="studenttab")
+@Table(name = "studenttab")
 public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // it will take care of generating the value
     private long id;
 
-    @Column(name="sname") // since the name in table is different
+    @Column(name = "sname") // since the name in table is different
     private String name;
 
-    @Column(name="scourse") // since the name in table is different
+    @Column(name = "scourse") // since the name in table is different
     private String course;
 
-    @Column(name="sfee") // since the name in table is different
+    @Column(name = "sfee") // since the name in table is different
     private double fee;
 
     public long getId() {
@@ -60,7 +60,6 @@ public class Student {
                 ", fees=" + fee +
                 '}';
     }
-
 
 
 }

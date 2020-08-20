@@ -14,10 +14,10 @@ class SomeBusinessImpTest {
     }
 }
 
-class DataServiceStub implements  DataService {
+class DataServiceStub implements DataService {
 
     @Override
     public int[] retrieveAllData() {
-        return new int[] { 24, 5 , 15};
+        return new int[]{24, 5, 15};
     }
 }
